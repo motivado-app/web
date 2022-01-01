@@ -2,8 +2,7 @@ import React from "react";
 import { 
   BrowserRouter,
   Routes,
-  Route,
-  Navigate
+  Route
 } from 'react-router-dom';
 import { 
   Home, 
@@ -17,9 +16,9 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/404" element={<NotFound />} />
+        
         {/* Redirect if there is no path */}
-        <Route path="/*" element={<Navigate to="/404" />} />
+        <Route path="/*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   )
