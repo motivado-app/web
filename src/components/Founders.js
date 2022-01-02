@@ -48,7 +48,7 @@ export default function Contributors() {
     return (
         <div className='container flex flex-col justify-center space-x-11 space-y-11'>
             <br />
-            <h1 className='text-4xl font-bold text-center'>Founders</h1>
+            <h1 className='text-4xl font-bold text-center'>Our Team</h1>
             <div className='container space-y-8'>
                     {founders.map((founder, index) => {
                         return (
