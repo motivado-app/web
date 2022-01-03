@@ -1,16 +1,17 @@
 import React from 'react'
-import newProject from './../images/New Project.svg'
+import newProject from './../images/Project.webp'
 import logo from './../images/motivado_logo.png'
 
-export default function Landing() {
+export default function Landing(){
     return (
-        <div className="container flex flex-col md:flex-row md:content-center md:justify-center space-x-14">
-            <img src={newProject} alt="Motivado" className="xl:w-[53%] xl:h-[53%] md:w-[60%] md:h-[60%] w-[90%] h-[90%] hidden md:contents" />
-            <p className='hidden md:contents'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-            <div className='flex flex-col justify-center items-center space-y-4'>
-                <img src={logo} alt="Motivato" className='w-[14rem] h-[14rem]' />
+        <div className='md:flex space-x-9 space-y-8'>
+            <img src={newProject} alt="Motivado" className='md:w-[49%] md:h-[49%]' />
+            <div className='flex flex-col justify-center items-center md:space-y-4 text-center md:gap-x-6'>
+                <img src={logo} alt="Motivado" className='md:w-[13rem] md:h-[13rem] w-[11rem] h-[11rem]' />
                 <h1 className='text-6xl md:text-7xl font-bold'>Motivado</h1>
-                <p className='text-lg text-gray-500 font-light text-center'>" Today is your opportunity to build the tomorrow you want "</p>
+                <p className='text-lg text-gray-500 font-light'>
+                    " Today is your opportunity to build the tomorrow you want "
+                </p>
             </div>
         </div>
     )
